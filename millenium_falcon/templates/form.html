@@ -1,0 +1,16 @@
+<html>
+    <head align='center'>
+    <h1>Millenium Falcon</h1>
+    </head>
+    <body align='center'>
+        <img src="{{url_for('static', filename='never-tell-me-the-odds.gif')}} 
+            "style="float: middle;" alt="logo" />
+        <br></br>
+        <h3 style="color: green">Please Upload the Intercepted information file</h3>
+        <form action = "http://localhost:{{port}}/uploader" 
+            method = "POST" enctype = "multipart/form-data">
+            <input type = "file" name = "intercepted_data" />
+            <input type = "submit"/>
+        </form>   
+    </body>
+</html>

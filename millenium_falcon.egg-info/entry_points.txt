@@ -1,0 +1,3 @@
+[console_scripts]
+give-me-the-odds = millenium_falcon.cli:give_me_the_odds
+
