@@ -4,11 +4,14 @@ This project calculates the probability of the **Millennium Falcon** successfull
 
 
 Test : https://github.com/lioncowlionant/developer-test
+
 ---
+
 ## ⚡ **Proposed Algorithm** 
 DFS(source planet) (O(n^n)) if planet is destination add the current sequence of path from source to destination as a valid path for each planet in neighbour(source planet) mark planet as visited and dont visit it again (also if no fuel is left add a stay on the planet enroute) DFS(planet) backtrack by unmarking the planet
 
 source planet -> The planet where the falcon starts the journey DFS(source planet) -> Generate all valid paths (along with refuelling stay) from source to destianation for each path O(p*n) avoid bounty hunters -> by staying at the previous planet (until the countdown permits one additional day of stay) Finally, find the success percentage corresponding to the minimum number of encounters in any path.
+
 ---
 
 ## 📦 **Installation**  
